@@ -1,0 +1,35 @@
+.step-button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.btn{
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    border: 2px solid #003366;
+    border-radius: 5px;
+    padding: 10px 30px;
+    transition: color 0.5s ease,background-color 0.5s ease;
+}
+.btn-prev{
+    color: #003366;
+    background-color: #fff;
+}
+.btn-next{
+    color: #fff;
+    background-color: #003366;
+}
+.btn-prev:hover:not([disabled]){
+    color: #fff;
+    background-color: #003366;
+}
+.btn-next:hover{
+    color: #003366;
+    background-color: #fff;
+}
+.btn-prev:disabled{
+    cursor: not-allowed;
+    opacity: 0.5;
+}
